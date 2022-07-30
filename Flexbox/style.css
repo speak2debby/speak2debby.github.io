@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: rgb(248, 227, 227);
+    font-size: 15px;
+}
+
+
+.container {
+    overflow: hidden;
+    display: flex;
+    width: 1440px;
+    margin-left: 10rem;
+    margin-top: 10rem;
+    padding: 1rem;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+}
+
+
+
+.content {
+    font-family: "lexend deca";
+    color: aliceblue;
+}
+
+
+
+
+.top-left {
+    width: 15%;
+    background-color: hsl(31, 77%, 52%);
+    padding: 20px;
+    color: white;
+    min-height: 60%;
+
+}
+
+.top-left button {
+    color: hsl(31, 77%, 52%);
+}
+
+.title {
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+
+.top-middle {
+    width: 15%;
+    background-color: hsl(184, 100%, 22%);
+    padding: 20px;
+    color: white;
+    min-height: 60%;
+}
+
+.top-middle button {
+    color: hsl(184, 100%, 22%);
+}
+
+
+
+.top-right {
+    width: 15%;
+    background-color: rgb(34, 51, 51);
+    padding: 20px;
+    color: white;
+    min-height: 60%;
+
+}
+
+.top-right button {
+    color: rgb(34, 51, 51);
+}
+
+
+button {
+    border-radius: 50px;
+    border: 2px solid hsl(0, 0%, 95%);
+    padding: 0.8em;
+    width: 100px;
+    height: 40px;
+    margin-top: 5rem;
+    background-color: white;
+    box-shadow: 0;
+
+}
+
+.button hover {
+    background-color: transparent;
+    cursor: pointer;
+    color: rgb(197, 24, 24);
+} 
+
+.grid {
+    position: absolute;
+    top: 15px;
+    right: 2em;
+    background-color: rgb(243, 88, 197);
+    border-radius: 50%;
+    padding: 0.8em;
+    width: 10rem;
+    margin-top: 5rem;
+    box-shadow: 100px;
+    height: 3.0rem;
+}
+
+.grid hover {
+    background-color: hsl(14, 87%, 49%);
+    cursor: pointer;
+    color: beige;
+}
+
+
+
+/*Responsivesness on flexbox page*/
+@media (max-width: 375px) {
+    .bg {
+        background-size: cover;
+    }
+
+    .content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .left {
+        width: 100%;
+        border-radius: 10px;
+        padding: 30px;
+    }
+
+    .center {
+        width: 100%;
+        border-radius: 10px;
+        padding: 30px;
+    }
+
+    .right {
+        width: 100%;
+        border-radius: 10px;
+        padding: 30px;
+    }
+}
+
+/*For grid design*/
+
+.grid-container {
+    display: grid;
+    grid: 100% / auto auto auto;
+    padding: 30px;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+.Item-a {
+    background-color: hsl(31, 77%, 52%);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    font-size: 15px;
+    height: 100%;
+    padding: 30px;
+}
+
+.Item-b {
+    background-color: hsl(184, 100%, 22%);
+    height: 100%;
+    padding: 30px;
+    font-size: 15px;
+}
+
+.Item-c {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: hsl(179, 100%, 13%);
+    height: 100%;
+    padding: 30px;
+    font-size: 15px;
+}
+
+.bg .grid-container .btn {
+    padding-top: 40px;
+}
+
+/*Mobile responsiveness on grid page*/
+
+@media (max-width: 375px) {
+    .grid-container {
+        grid: 35% / auto;
+        grid-gap: 10px;
+        padding: 10px;
+    }
+
+    .Item-a {
+        border-radius: 10px;
+    }
+
+    .Item-b {
+        border-radius: 10px;
+    }
+
+    .Item-c {
+        border-radius: 10px;
+    }
+}
